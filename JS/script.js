@@ -4,6 +4,15 @@ $(window).on("load", function() {
         $(".loader").fadeOut(550);
 
     });
+ 
+   $(".items").isotope({
+        filter: '*',
+        animationoption: {
+            duration: 1500,
+            easing:'linear',
+            queue: false
+        }
+    });
 })
 
 
@@ -82,14 +91,7 @@ $(document).ready(function() {
     
     $("[data-fancybox]").fancybox();
 
-    $(".items").isotope({
-        filter: '*',
-        animationoption: {
-            duration: 1500,
-            easing:'linear',
-            queue: false
-        }
-    });
+  
 
     $("#filters a").click(function() {
 
